@@ -6,7 +6,7 @@ from airflow.utils.dates import days_ago
 from datetime import timedelta
 from functools import partial
 
-from .dag_utils import task_fail_slack_alert_callback
+from dag_utils import task_fail_slack_alert_callback
 from data_pipeline.config import conf
 from data_pipeline.utils.datetime_utils import generate_timestamp
 from data_pipeline.db.mysql import connect_mysql, mysql_insert_transactions, mysql_insert_contacts

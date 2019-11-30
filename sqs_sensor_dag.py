@@ -4,7 +4,7 @@ from io import BytesIO
 from zipfile import ZipFile
 
 from airflow import DAG
-from .dag_utils import task_fail_slack_alert_callback
+from dag_utils import task_fail_slack_alert_callback
 from airflow.utils.decorators import apply_defaults
 from airflow.settings import Session, DAGS_FOLDER
 from airflow.models.dag import DagBag

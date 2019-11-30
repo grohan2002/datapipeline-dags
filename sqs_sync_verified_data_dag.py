@@ -2,7 +2,7 @@ import json
 import logging
 
 from airflow import DAG
-from .dag_utils import task_fail_slack_alert_callback
+from dag_utils import task_fail_slack_alert_callback
 from airflow.operators.python_operator import PythonOperator
 from airflow.contrib.sensors.aws_sqs_sensor import SQSSensor
 from airflow.utils.dates import days_ago
